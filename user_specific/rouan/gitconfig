@@ -1,0 +1,29 @@
+[user]
+  name = Rouan W
+  email = rmw@thoughtworks.com
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = auto
+[diff]
+  renames = true
+[alias]
+  changes=diff --name-status -r
+  st=status
+  co=checkout
+  ci=commit -a
+  undo=checkout -f
+  pr = pull --rebase
+	l = log
+[core]
+  excludesfile = ~/.gitignore
+[mirror]
+  summary = true
+[branch]
+  autosetupmerge = true
+[help]
+  autocorrect = 1
+[push]
+	default = current

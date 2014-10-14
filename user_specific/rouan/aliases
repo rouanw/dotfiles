@@ -1,0 +1,27 @@
+# get here
+
+alias myalias="vi /Users/Admin/projects/dotfiles/user_specific/rouan/aliases"
+
+# django
+alias activate="source ve/bin/activate"
+alias pm="python manage.py"
+alias unit="python manage.py unit"
+alias int="python manage.py integration"
+alias func="python manage.py functional"
+
+# rails
+alias dbpeek="sqlite3 db/development.sqlite3"
+alias spec="rspec spec"
+alias server="rails server"
+alias wgo="cd ~/personal/writer && rvm use 1.9.3"
+
+# other
+alias copyp="echo -n $(pwd) | pbcopy"
+alias bashprofile="vi ~/.bash_profile"
+
+#git
+alias gitconfig="less .git/config"
+alias submodulepull="git submodule foreach git pull --ff-only"
+
+#js
+alias jwatch="grunt karma:watch"
