@@ -1,6 +1,6 @@
 # get here
 
-alias myalias="vi /Users/Admin/projects/dotfiles/user_specific/rouan/aliases"
+alias myalias="vi ~/projects/dotfiles/user_specific/rouan/aliases"
 
 # django
 alias activate="source ve/bin/activate"
@@ -22,6 +22,7 @@ alias bashprofile="vi ~/.bash_profile"
 #git
 alias gitconfig="less .git/config"
 alias submodulepull="git submodule foreach git pull --ff-only"
+alias g="git"
 
 #js
 alias jwatch="grunt karma:watch"

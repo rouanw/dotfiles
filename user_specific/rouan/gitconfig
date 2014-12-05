@@ -13,10 +13,12 @@
   changes=diff --name-status -r
   st=status
   co=checkout
-  ci=commit -a
+  ci=commit
   undo=checkout -f
-  pr = pull --rebase
-	l = log
+  pr=pull --rebase
+  l=log
+  s=status
+  a=add -A
 [core]
   excludesfile = ~/.gitignore
 [mirror]
