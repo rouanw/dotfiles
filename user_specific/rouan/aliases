@@ -1,28 +1,33 @@
 # get here
 
 alias myalias="vi ~/projects/dotfiles/user_specific/rouan/aliases"
+alias mygitconfig="vi ~/projects/dotfiles/user_specific/rouan/gitconfig"
 
-# django
+# py
 alias activate="source ve/bin/activate"
 alias pm="python manage.py"
 alias unit="python manage.py unit"
 alias int="python manage.py integration"
 alias func="python manage.py functional"
+alias simpleserver="python -m SimpleHTTPServer"
 
 # rails
 alias dbpeek="sqlite3 db/development.sqlite3"
 alias spec="rspec spec"
 alias server="rails server"
-alias wgo="cd ~/personal/writer && rvm use 1.9.3"
+alias wgo="cd ~/personal/writer && rvm gemset use writer"
 
 # other
 alias copyp="echo -n $(pwd) | pbcopy"
 alias bashprofile="vi ~/.bash_profile"
 
 #git
-alias gitconfig="less .git/config"
+alias gitconfig="vi .git/config"
 alias submodulepull="git submodule foreach git pull --ff-only"
 alias g="git"
 
 #js
 alias jwatch="grunt karma:watch"
+
+#subl
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"

@@ -18,3 +18,11 @@ cat >> $LOGFILE <<< "user specific boost..."
 source ~/.user_specific/loader
 
 cat >> $LOGFILE <<< "--- Boost process for non login shell Complete!"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+### Maven stuff
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home
