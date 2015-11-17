@@ -24,5 +24,9 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-### Maven stuff
+### Java stuff
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home
+export GRADLE_HOME=/usr/local/Cellar/gradle/2.3/libexec
+
+# added by travis gem
+[ -f /Users/rouan/.travis/travis.sh ] && source /Users/rouan/.travis/travis.sh

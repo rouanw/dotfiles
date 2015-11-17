@@ -31,3 +31,6 @@ alias jwatch="grunt karma:watch"
 
 #subl
 alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+
+# ruby
+alias rgem="rvm gemset use"
