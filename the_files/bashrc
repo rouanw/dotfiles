@@ -30,3 +30,6 @@ export GRADLE_HOME=/usr/local/Cellar/gradle/2.3/libexec
 
 # added by travis gem
 [ -f /Users/rouan/.travis/travis.sh ] && source /Users/rouan/.travis/travis.sh
+
+export NVM_DIR="/Users/Rouan/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
