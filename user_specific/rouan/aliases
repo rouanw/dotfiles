@@ -1,36 +1,18 @@
 # get here
-
 alias myalias="vi ~/projects/dotfiles/user_specific/rouan/aliases"
 alias mygitconfig="vi ~/projects/dotfiles/user_specific/rouan/gitconfig"
 
-# py
-alias activate="source ve/bin/activate"
-alias pm="python manage.py"
-alias unit="python manage.py unit"
-alias int="python manage.py integration"
-alias func="python manage.py functional"
+# python
 alias simpleserver="python -m SimpleHTTPServer"
 
-# rails
-alias dbpeek="sqlite3 db/development.sqlite3"
-alias spec="rspec spec"
-alias server="rails server"
-alias wgo="cd ~/personal/writer && rvm gemset use writer"
-
-# other
-alias copyp="echo -n $(pwd) | pbcopy"
+# general
+copy_path_to_clipboard() {
+  echo -n ${PWD}| pbcopy
+}
+alias copypath=copy_path_to_clipboard
 alias bashprofile="vi ~/.bash_profile"
 
-#git
+# git
+alias g="git"
 alias gitconfig="vi .git/config"
 alias submodulepull="git submodule foreach git pull --ff-only"
-alias g="git"
-
-#js
-alias jwatch="grunt karma:watch"
-
-#subl
-alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
-
-# ruby
-alias rgem="rvm gemset use"
