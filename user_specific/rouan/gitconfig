@@ -23,6 +23,7 @@
   dc=diff --cached
   lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   ls=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -20
+  amend=commit --amend --no-edit
 [core]
   excludesfile = ~/.gitignore
 [mirror]
