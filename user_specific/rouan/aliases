@@ -23,3 +23,8 @@ restart_pm2_app() {
   npm run build-assets && pm2 restart $app && pm2 logs $app
 }
 alias pmrestart=restart_pm2_app
+
+# poem of the day
+alias poemoftheday="rsstail -u http://feeds.poetryfoundation.org/PoetryFoundation/PoemOfTheDayText -1 -d -n 1 -N | html2text -utf8 | sed '/^ Poem of the Day/ s/$/ &\'$'\n/'
+"
+alias poemsnippet="rsstail -u http://feeds.poetryfoundation.org/PoetryFoundation/PoemOfTheDayText -1 -d -n 1 -N | html2text -utf8 | head -5 | tail +2"
