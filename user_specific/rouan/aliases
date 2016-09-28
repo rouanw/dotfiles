@@ -16,3 +16,10 @@ alias bashprofile="vi ~/.bash_profile"
 alias g="git"
 alias gitconfig="vi .git/config"
 alias submodulepull="git submodule foreach git pull --ff-only"
+
+# node
+restart_pm2_app() {
+  app="$(basename `pwd`)"
+  npm run build-assets && pm2 restart $app && pm2 logs $app
+}
+alias pmrestart=restart_pm2_app
