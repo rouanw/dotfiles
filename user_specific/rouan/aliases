@@ -38,6 +38,9 @@ restart_pm2_svc() {
 }
 alias pmsvcrestart=restart_pm2_svc
 
+alias httpstatuscode="node --print \"http.STATUS_CODES\" | grep ${1}"
+alias httpstatuscodes="node --print \"http.STATUS_CODES\""
+
 # docker
 docker_login() {
   prefix=$1
