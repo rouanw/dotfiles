@@ -12,6 +12,14 @@ copy_path_to_clipboard() {
 alias copypath=copy_path_to_clipboard
 alias bashprofile="vi ~/.bash_profile"
 
+alias please=": &&"
+
+alias todo="code ~/Desktop/todo.yml"
+
+alias pomodoro="sleep 1500 && osascript -e 'display notification \"Pomodoro over\" with title \"Pomodoro over\" sound name \"Submarine\"'"
+
+alias pomodoro_break="sleep 300 && osascript -e 'display notification \"Break over\" with title \"Break over\" sound name \"Submarine\"'"
+
 # git
 alias g="git"
 alias gitconfig="vi .git/config"
