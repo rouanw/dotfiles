@@ -22,6 +22,8 @@ alias pomodoro_break="date && sleep 300 && osascript -e 'display notification \"
 
 alias pomodoro_long_break="date && sleep 1200 && osascript -e 'display notification \"Long break over\" with title \"Break over\" sound name \"Submarine\"' && echo long break completed && date"
 
+alias pomodoro_snooze="date && sleep 120 && osascript -e 'display notification \"Snooze complete\" with title \"Let it go\" sound name \"Submarine\"' && echo snooze completed"
+
 # git
 alias g="git"
 alias gitconfig="vi .git/config"
