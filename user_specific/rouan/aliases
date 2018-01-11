@@ -1,4 +1,5 @@
 # get here
+
 alias myalias="vi ~/projects/dotfiles/user_specific/rouan/aliases"
 alias mygitconfig="vi ~/projects/dotfiles/user_specific/rouan/gitconfig"
 
@@ -11,6 +12,7 @@ copy_path_to_clipboard() {
 }
 alias copypath=copy_path_to_clipboard
 alias bashprofile="vi ~/.bash_profile"
+alias terminal="open -a Terminal "`pwd`""
 
 alias please=": &&"
 
@@ -46,6 +48,8 @@ alias jenkins=open_on_jenkins
 
 
 # node
+alias n="npm"
+
 restart_pm2_app() {
   app="$(basename `pwd`)"
   npm run build-assets && pm2 restart $app && pm2 logs $app
