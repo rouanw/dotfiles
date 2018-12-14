@@ -13,9 +13,11 @@ copy_path_to_clipboard() {
 alias copypath=copy_path_to_clipboard
 alias bashprofile="vi ~/.bash_profile"
 alias terminal="open -a Terminal "`pwd`""
+alias ff="grep -rnw --exclude-dir={node_modules,dist,.git} . -e $1"
 
 alias please=": &&"
 
+# productivity
 alias todo="code \"/Users/Rouan/Google Drive\"/todo.yml"
 alias podo="code \"/Users/Rouan/Google Drive\"/podo.yml"
 alias pomodoro="date && sleep 1500 && osascript -e 'display notification \"Pomodoro completed\" with title \"Pomodoro completed\" sound name \"Submarine\"' && echo pomodoro completed && date"
@@ -25,6 +27,8 @@ alias pomodoro_break="date && sleep 300 && osascript -e 'display notification \"
 alias pomodoro_long_break="date && sleep 1200 && osascript -e 'display notification \"Long break over\" with title \"Break over\" sound name \"Submarine\"' && echo long break completed && date"
 
 alias pomodoro_snooze="date && sleep 120 && osascript -e 'display notification \"Snooze complete\" with title \"Let it go\" sound name \"Submarine\"' && echo snooze completed"
+
+alias space="docker system prune --volumes && brew cleanup && rm -r ~/Library/Caches/com.spotify.client"
 
 # git
 alias g="git"
