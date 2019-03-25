@@ -28,7 +28,7 @@ alias pomodoro_long_break="date && sleep 1200 && osascript -e 'display notificat
 
 alias pomodoro_snooze="date && sleep 120 && osascript -e 'display notification \"Snooze complete\" with title \"Let it go\" sound name \"Submarine\"' && echo snooze completed"
 
-alias space="docker system prune --volumes && brew cleanup && rm -r ~/Library/Caches/com.spotify.client"
+alias space="docker system prune --volumes && brew cleanup && rm -r ~/Library/Caches/com.spotify.client && rm -r ~/Library/Caches/Yarn"
 
 # git
 alias g="git"
@@ -50,6 +50,12 @@ open_on_jenkins() {
 }
 alias jenkins=open_on_jenkins
 
+# npm
+open_on_npm() {
+  app="$(basename `pwd`)"
+  open https://www.npmjs.com/package/${app}
+}
+alias n_open=open_on_npm
 
 # node
 alias n="npm"
