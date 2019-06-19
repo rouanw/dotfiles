@@ -29,7 +29,3 @@ cat >> $LOGFILE <<< "terminal_colors..."
 source ~/.bash_boost/terminal_colors
 
 cat >> $LOGFILE <<< "--- Boost process Successful and Complete!"
-
-[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
-
-poemsnippet
