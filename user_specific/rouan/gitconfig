@@ -16,6 +16,7 @@
   ci=commit
   undo=checkout -f
   pr=pull --rebase
+  pt=push --follow-tags
   l=log
   s=status
   a=add -A
