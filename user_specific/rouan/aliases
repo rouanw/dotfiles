@@ -17,6 +17,8 @@ alias ff="grep -rnw --exclude-dir={node_modules,dist,.git} . -e $1"
 
 alias please=": &&"
 
+alias dark_mode="osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode'"
+
 # productivity
 alias todo="code \"/Users/Rouan/Google Drive\"/todo.yml"
 alias podo="code \"/Users/Rouan/Google Drive\"/podo.yml"
@@ -56,6 +58,8 @@ open_on_npm() {
   open https://www.npmjs.com/package/${app}
 }
 alias n_open=open_on_npm
+
+alias upgrade_npm="nvm ls --no-colors | grep -v -E -e '.+->' | sed 's/[-*> ]//g' | while read in; do nvm exec "$in" npm i -g npm; done"
 
 # node
 alias n="npm"
@@ -100,4 +104,4 @@ alias poemoftheday="rsstail -u http://feeds.poetryfoundation.org/PoetryFoundatio
 alias poemsnippet="rsstail -u http://feeds.poetryfoundation.org/PoetryFoundation/PoemOfTheDayText -1 -d -n 1 -N | html2text -utf8 | head -5 | tail +2"
 
 # personal
-alias finances="cd ~/projects/finances && simpleserver && open http://localhost:8000/finances.html"
+alias finances="cd ~/projects/finances && open http://localhost:8000/finances.html && simpleserver"
